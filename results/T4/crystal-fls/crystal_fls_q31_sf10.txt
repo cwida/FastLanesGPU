@@ -1,0 +1,939 @@
+==PROF== Connected to process 34912 (/home/ubuntu/fff/cmake-build-release-g4dn/gpu/fastlanes/src/fls_q31_bitpacked)
+[33m-- lo_custkey_min: 1[39m
+[33m-- lo_custkey_max: 299999[39m
+[33m-- x: 19[39m
+** LOADED DATA **
+** LOADED DATA TO GPU **
+==PROF== Profiling "build_hashtable_s" - 0: 0%....50%....100% - 35 passes
+==PROF== Profiling "build_hashtable_c" - 1: 0%....50%....100% - 35 passes
+==PROF== Profiling "build_hashtable_d" - 2: 0%....50%....100% - 35 passes
+==PROF== Profiling "probe" - 3: 0%....50%....100% - 35 passes
+Result:
+1992 8 8 55810032958
+1993 8 8 55419816844
+1994 8 8 54858143551
+1995 8 8 55052048227
+1996 8 8 55934455910
+1997 8 8 55029634139
+1992 9 8 59392902106
+1993 9 8 59125543423
+1994 9 8 58117083616
+1995 9 8 58449872713
+1996 9 8 59233979627
+1997 9 8 58441279090
+1992 12 8 57922369786
+1993 12 8 57770968742
+1994 12 8 58288999734
+1995 12 8 58083494498
+1996 12 8 58028640530
+1997 12 8 58384439424
+1992 18 8 58754091824
+1993 18 8 60132427921
+1994 18 8 57930388280
+1995 18 8 58580374657
+1996 18 8 60104499132
+1997 18 8 59540501870
+1992 21 8 57482969289
+1993 21 8 57196631632
+1994 21 8 56887893669
+1995 21 8 57359009401
+1996 21 8 57185726246
+1997 21 8 55770192252
+1992 8 9 60289620307
+1993 8 9 59669358608
+1994 8 9 59227963032
+1995 8 9 58083604342
+1996 8 9 59549633256
+1997 8 9 59226423899
+1992 9 9 63766872312
+1993 9 9 63450609364
+1994 9 9 63331300915
+1995 9 9 63061195588
+1996 9 9 63059702679
+1997 9 9 63852776026
+1992 12 9 62344531177
+1993 12 9 62565992442
+1994 12 9 62751696537
+1995 12 9 64005217794
+1996 12 9 63240925150
+1997 12 9 62768522335
+1992 18 9 63579886846
+1993 18 9 64007433384
+1994 18 9 64049090450
+1995 18 9 63593078482
+1996 18 9 64144972749
+1997 18 9 64316632938
+1992 21 9 62489017232
+1993 21 9 61251942124
+1994 21 9 62974158477
+1995 21 9 62194360745
+1996 21 9 63427038266
+1997 21 9 61646243962
+1992 8 12 56621226681
+1993 8 12 57388881032
+1994 8 12 58125827305
+1995 8 12 57289721321
+1996 8 12 58199587350
+1997 8 12 57255842192
+1992 9 12 60979743712
+1993 9 12 60418533333
+1994 9 12 62238770686
+1995 9 12 62168610917
+1996 9 12 61138073328
+1997 9 12 60949716596
+1992 12 12 60850079777
+1993 12 12 61121098249
+1994 12 12 59365844929
+1995 12 12 61306266372
+1996 12 12 60986975496
+1997 12 12 60764732195
+1992 18 12 61723423241
+1993 18 12 60358548529
+1994 18 12 62740786765
+1995 18 12 61356245530
+1996 18 12 61790338663
+1997 18 12 60775371251
+1992 21 12 60325249149
+1993 21 12 58753924379
+1994 21 12 60075724460
+1995 21 12 60195276711
+1996 21 12 59823166994
+1997 21 12 59290322956
+1992 8 18 61203981312
+1993 8 18 60533327021
+1994 8 18 59406890241
+1995 8 18 61032993971
+1996 8 18 60603415703
+1997 8 18 60996773423
+1992 9 18 65966808964
+1993 9 18 64754910872
+1994 9 18 65336592327
+1995 9 18 65462377211
+1996 9 18 65195236357
+1997 9 18 64985199873
+1992 12 18 65058022097
+1993 12 18 64739745546
+1994 12 18 65154462514
+1995 12 18 64552890307
+1996 12 18 65518312188
+1997 12 18 64052371252
+1992 18 18 64425556615
+1993 18 18 65900407107
+1994 18 18 65409639441
+1995 18 18 65334011363
+1996 18 18 65143825109
+1997 18 18 65086542879
+1992 21 18 63711417182
+1993 21 18 64173962924
+1994 21 18 63605939654
+1995 21 18 61974741198
+1996 21 18 63669933488
+1997 21 18 62601944454
+1992 8 21 50971039744
+1993 8 21 52220706010
+1994 8 21 50241741123
+1995 8 21 51395371603
+1996 8 21 52381894286
+1997 8 21 52011083842
+1992 9 21 54987586100
+1993 9 21 54025151851
+1994 9 21 54783712241
+1995 9 21 55184829281
+1996 9 21 54162547083
+1997 9 21 54119451445
+1992 12 21 54411375559
+1993 12 21 53875917105
+1994 12 21 53285064331
+1995 12 21 53705861117
+1996 12 21 54664539611
+1997 12 21 54738097793
+1992 18 21 55470492434
+1993 18 21 55405246901
+1994 18 21 54457040610
+1995 18 21 55091271737
+1996 18 21 55015868166
+1997 18 21 56394270254
+1992 21 21 54096226255
+1993 21 21 53624605015
+1994 21 21 53622935617
+1995 21 21 52905375721
+1996 21 21 54451741041
+1997 21 21 53282782506
+Res Count: 150
+Time Taken Total: 32097.9
+{"query":31,"time_query":32097.9}
+==PROF== Disconnected from process 34912
+[34912] fls_q31_bitpacked@127.0.0.1
+  void build_hashtable_s<(int)32, (int)32>(int *, int *, int *, int, int *, int) (20, 1, 1)x(32, 1, 1), Context 1, Stream 7, Device 0, CC 7.5
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/nsecond         4.61
+    SM Frequency            cycle/usecond       540.35
+    Elapsed Cycles                  cycle        10274
+    Memory Throughput                   %         8.91
+    DRAM Throughput                     %         8.91
+    Duration                      usecond        19.01
+    L1/TEX Cache Throughput             %         7.12
+    L2 Cache Throughput                 %         3.17
+    SM Active Cycles                cycle      4441.85
+    Compute (SM) Throughput             %         1.55
+    ----------------------- ------------- ------------
+
+    OPT   This kernel grid is too small to fill the available resources on this device, resulting in only 0.0 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: GPU Speed Of Light Roofline Chart
+    INF   The ratio of peak float (fp32) to double (fp64) performance on this device is 32:1. The kernel achieved 0% of 
+          this device's fp32 peak performance and 0% of its fp64 peak performance. See the Kernel Profiling Guide       
+          (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#roofline) for more details on roofline      
+          analysis.                                                                                                     
+
+    Section: Compute Workload Analysis
+    -------------------- ----------- ------------
+    Metric Name          Metric Unit Metric Value
+    -------------------- ----------- ------------
+    Executed Ipc Active   inst/cycle         0.14
+    Executed Ipc Elapsed  inst/cycle         0.06
+    Issue Slots Busy               %         3.48
+    Issued Ipc Active     inst/cycle         0.14
+    SM Busy                        %         3.48
+    -------------------- ----------- ------------
+
+    OPT   Est. Local Speedup: 97.78%                                                                                    
+          All compute pipelines are under-utilized. Either this kernel is very small or it doesn't issue enough warps   
+          per scheduler. Check the Launch Statistics and Scheduler Statistics sections for further details.             
+
+    Section: Memory Workload Analysis
+    ----------------- ------------ ------------
+    Metric Name        Metric Unit Metric Value
+    ----------------- ------------ ------------
+    Memory Throughput Gbyte/second        26.31
+    Mem Busy                     %         3.17
+    Max Bandwidth                %         8.91
+    L1/TEX Hit Rate              %            0
+    L2 Hit Rate                  %        30.82
+    Mem Pipes Busy               %         1.55
+    ----------------- ------------ ------------
+
+    Section: Memory Workload Analysis Chart
+    WRN   The optional metric lts__average_gcomp_input_sector_success_rate.pct could not be found. Collecting it as an  
+          additional metric could enable the rule to provide more guidance.                                             
+
+    Section: Memory Workload Analysis Tables
+    OPT   Est. Speedup: 0.03441%                                                                                        
+          The memory access pattern for global stores in L1TEX might not be optimal. On average, this kernel accesses   
+          4.0 bytes per thread per memory request; but the address pattern, possibly caused by the stride between       
+          threads, results in 4.8 sectors per request, or 4.8*32 = 153.8 bytes of cache data transfers per request.     
+          The optimal thread address pattern for 4.0 byte accesses would result in 4.0*32 = 128.0 bytes of cache data   
+          transfers per request, to maximize L1TEX cache performance. Check the Source Counters section for             
+          uncoalesced global stores.                                                                                    
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 0.2761%                                                                                         
+          The memory access pattern for stores from L1TEX to L2 is not optimal. The granularity of an L1TEX request to  
+          L2 is a 128 byte cache line. That is 4 consecutive 32-byte sectors per L2 request. However, this kernel only  
+          accesses an average of 2.3 sectors out of the possible 4 sectors per cache line. Check the Source Counters    
+          section for uncoalesced stores and try to minimize how many cache lines need to be accessed per memory        
+          request.                                                                                                      
+
+    Section: Scheduler Statistics
+    ---------------------------- ----------- ------------
+    Metric Name                  Metric Unit Metric Value
+    ---------------------------- ----------- ------------
+    One or More Eligible                   %        12.77
+    Issued Warp Per Scheduler                        0.13
+    No Eligible                            %        87.23
+    Active Warps Per Scheduler          warp         0.92
+    Eligible Warps Per Scheduler        warp         0.13
+    ---------------------------- ----------- ------------
+
+    OPT   Est. Local Speedup: 87.23%                                                                                    
+          Every scheduler is capable of issuing one instruction per cycle, but for this kernel each scheduler only      
+          issues an instruction every 7.8 cycles. This might leave hardware resources underutilized and may lead to     
+          less optimal performance. Out of the maximum of 8 warps per scheduler, this kernel allocates an average of    
+          0.92 active warps per scheduler, which already limits the scheduler to less than a warp per instruction.      
+
+    Section: Warp State Statistics
+    ---------------------------------------- ----------- ------------
+    Metric Name                              Metric Unit Metric Value
+    ---------------------------------------- ----------- ------------
+    Warp Cycles Per Issued Instruction             cycle         7.20
+    Warp Cycles Per Executed Instruction           cycle         7.25
+    Avg. Active Threads Per Warp                                13.96
+    Avg. Not Predicated Off Threads Per Warp                    13.08
+    ---------------------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 48.34%                                                                                          
+          On average, each warp of this kernel spends 3.5 cycles being stalled waiting on a fixed latency execution     
+          dependency. Typically, this stall reason should be very low and only shows up as a top contributor in         
+          already highly optimized kernels. Try to hide the corresponding instruction latencies by increasing the       
+          number of active warps, restructuring the code or unrolling loops. Furthermore, consider switching to         
+          lower-latency instructions, e.g. by making use of fast math compiler options. This stall type represents      
+          about 48.3% of the total average of 7.2 cycles between issuing two instructions.                              
+    ----- --------------------------------------------------------------------------------------------------------------
+    INF   Check the Warp Stall Sampling (All Samples) table for the top stall locations in your source based on         
+          sampling data. The Kernel Profiling Guide                                                                     
+          (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-reference) provides more details    
+          on each stall reason.                                                                                         
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 0.9173%                                                                                         
+          Instructions are executed in warps, which are groups of 32 threads. Optimal instruction throughput is         
+          achieved if all 32 threads of a warp execute the same instruction. The chosen launch configuration, early     
+          thread completion, and divergent flow control can significantly lower the number of active threads in a warp  
+          per cycle. This kernel achieves an average of 14.0 threads being active per cycle. This is further reduced    
+          to 13.1 threads per warp due to predication. The compiler may use predication to avoid an actual branch.      
+          Instead, all instructions are scheduled, but a per-thread condition code or predicate controls which threads  
+          execute the instructions. Try to avoid different execution paths within a warp when possible.                 
+
+    Section: Instruction Statistics
+    ---------------------------------------- ----------- ------------
+    Metric Name                              Metric Unit Metric Value
+    ---------------------------------------- ----------- ------------
+    Avg. Executed Instructions Per Scheduler        inst       153.29
+    Executed Instructions                           inst        24526
+    Avg. Issued Instructions Per Scheduler          inst       154.41
+    Issued Instructions                             inst        24706
+    ---------------------------------------- ----------- ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                    32
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                     20
+    Registers Per Thread             register/thread             108
+    Shared Memory Configuration Size           Kbyte           32.77
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread             640
+    Waves Per SM                                                0.03
+    -------------------------------- --------------- ---------------
+
+    OPT   Est. Speedup: 50%                                                                                             
+          The grid for this launch is configured to execute only 20 blocks, which is less than the GPU's 40             
+          multiprocessors. This can underutilize some multiprocessors. If you do not intend to execute this kernel      
+          concurrently with other workloads, consider reducing the block size to have at least one block per            
+          multiprocessor or increase the size of the grid to fully utilize the available hardware resources. See the    
+          Hardware Model (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-hw-model)            
+          description for more details on launch configurations.                                                        
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           16
+    Block Limit Registers                 block           16
+    Block Limit Shared Mem                block           16
+    Block Limit Warps                     block           32
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           50
+    Achieved Occupancy                        %         3.12
+    Achieved Active Warps Per SM           warp            1
+    ------------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 87.23%                                                                                          
+          The difference between calculated theoretical (50.0%) and measured achieved occupancy (3.1%) can be the       
+          result of warp scheduling overheads or workload imbalances during the kernel execution. Load imbalances can   
+          occur between warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices   
+          Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on     
+          optimizing occupancy.                                                                                         
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 50%                                                                                             
+          The 4.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the       
+          hardware maximum of 8. This kernel's theoretical occupancy (50.0%) is limited by the number of blocks that    
+          can fit on the SM. This kernel's theoretical occupancy (50.0%) is limited by the number of required           
+          registers. This kernel's theoretical occupancy (50.0%) is limited by the required amount of shared memory.    
+
+    Section: Source Counters
+    ------------------------- ----------- ------------
+    Metric Name               Metric Unit Metric Value
+    ------------------------- ----------- ------------
+    Branch Instructions Ratio           %         0.08
+    Branch Instructions              inst         2069
+    Branch Efficiency                   %        16.30
+    Avg. Divergent Branches                       3.79
+    ------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 13.74%                                                                                          
+          This kernel has uncoalesced global accesses resulting in a total of 4534 excessive sectors (34% of the total  
+          13506 sectors). Check the L2 Theoretical Sectors Global Excessive table for the primary source locations.     
+          The CUDA Programming Guide                                                                                    
+          (https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#device-memory-accesses) has additional      
+          information on reducing uncoalesced device memory accesses.                                                   
+
+  void build_hashtable_c<(int)32, (int)32>(int *, int *, int *, int, int *, int) (293, 1, 1)x(32, 1, 1), Context 1, Stream 7, Device 0, CC 7.5
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/nsecond         4.53
+    SM Frequency            cycle/usecond       531.83
+    Elapsed Cycles                  cycle        20019
+    Memory Throughput                   %        70.14
+    DRAM Throughput                     %        70.14
+    Duration                      usecond        37.63
+    L1/TEX Cache Throughput             %        50.52
+    L2 Cache Throughput                 %        22.06
+    SM Active Cycles                cycle     17373.85
+    Compute (SM) Throughput             %        11.78
+    ----------------------- ------------- ------------
+
+    OPT   Memory is more heavily utilized than Compute: Look at the Memory Workload Analysis section to identify the    
+          DRAM bottleneck. Check memory replay (coalescing) metrics to make sure you're efficiently utilizing the       
+          bytes transferred. Also consider whether it is possible to do more work per memory access (kernel fusion) or  
+          whether there are values you can (re)compute.                                                                 
+
+    Section: GPU Speed Of Light Roofline Chart
+    INF   The ratio of peak float (fp32) to double (fp64) performance on this device is 32:1. The kernel achieved 0% of 
+          this device's fp32 peak performance and 0% of its fp64 peak performance. See the Kernel Profiling Guide       
+          (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#roofline) for more details on roofline      
+          analysis.                                                                                                     
+
+    Section: Compute Workload Analysis
+    -------------------- ----------- ------------
+    Metric Name          Metric Unit Metric Value
+    -------------------- ----------- ------------
+    Executed Ipc Active   inst/cycle         0.52
+    Executed Ipc Elapsed  inst/cycle         0.45
+    Issue Slots Busy               %        13.06
+    Issued Ipc Active     inst/cycle         0.52
+    SM Busy                        %        13.06
+    -------------------- ----------- ------------
+
+    OPT   Est. Local Speedup: 91.49%                                                                                    
+          All compute pipelines are under-utilized. Either this kernel is very small or it doesn't issue enough warps   
+          per scheduler. Check the Launch Statistics and Scheduler Statistics sections for further details.             
+
+    Section: Memory Workload Analysis
+    ----------------- ------------ ------------
+    Metric Name        Metric Unit Metric Value
+    ----------------- ------------ ------------
+    Memory Throughput Gbyte/second       203.39
+    Mem Busy                     %        22.06
+    Max Bandwidth                %        70.14
+    L1/TEX Hit Rate              %            0
+    L2 Hit Rate                  %        24.11
+    Mem Pipes Busy               %        11.78
+    ----------------- ------------ ------------
+
+    Section: Memory Workload Analysis Chart
+    WRN   The optional metric lts__average_gcomp_input_sector_success_rate.pct could not be found. Collecting it as an  
+          additional metric could enable the rule to provide more guidance.                                             
+
+    Section: Memory Workload Analysis Tables
+    OPT   Est. Speedup: 0.2767%                                                                                         
+          The memory access pattern for global stores in L1TEX might not be optimal. On average, this kernel accesses   
+          4.0 bytes per thread per memory request; but the address pattern, possibly caused by the stride between       
+          threads, results in 4.8 sectors per request, or 4.8*32 = 155.0 bytes of cache data transfers per request.     
+          The optimal thread address pattern for 4.0 byte accesses would result in 4.0*32 = 128.0 bytes of cache data   
+          transfers per request, to maximize L1TEX cache performance. Check the Source Counters section for             
+          uncoalesced global stores.                                                                                    
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 2.114%                                                                                          
+          The memory access pattern for stores from L1TEX to L2 is not optimal. The granularity of an L1TEX request to  
+          L2 is a 128 byte cache line. That is 4 consecutive 32-byte sectors per L2 request. However, this kernel only  
+          accesses an average of 2.3 sectors out of the possible 4 sectors per cache line. Check the Source Counters    
+          section for uncoalesced stores and try to minimize how many cache lines need to be accessed per memory        
+          request.                                                                                                      
+
+    Section: Scheduler Statistics
+    ---------------------------- ----------- ------------
+    Metric Name                  Metric Unit Metric Value
+    ---------------------------- ----------- ------------
+    One or More Eligible                   %        11.87
+    Issued Warp Per Scheduler                        0.12
+    No Eligible                            %        88.13
+    Active Warps Per Scheduler          warp         1.61
+    Eligible Warps Per Scheduler        warp         0.13
+    ---------------------------- ----------- ------------
+
+    OPT   Est. Local Speedup: 29.86%                                                                                    
+          Every scheduler is capable of issuing one instruction per cycle, but for this kernel each scheduler only      
+          issues an instruction every 8.4 cycles. This might leave hardware resources underutilized and may lead to     
+          less optimal performance. Out of the maximum of 8 warps per scheduler, this kernel allocates an average of    
+          1.61 active warps per scheduler, but only an average of 0.13 warps were eligible per cycle. Eligible warps    
+          are the subset of active warps that are ready to issue their next instruction. Every cycle with no eligible   
+          warp results in no instruction being issued and the issue slot remains unused. To increase the number of      
+          eligible warps, reduce the time the active warps are stalled by inspecting the top stall reasons on the Warp  
+          State Statistics and Source Counters sections.                                                                
+
+    Section: Warp State Statistics
+    ---------------------------------------- ----------- ------------
+    Metric Name                              Metric Unit Metric Value
+    ---------------------------------------- ----------- ------------
+    Warp Cycles Per Issued Instruction             cycle        13.56
+    Warp Cycles Per Executed Instruction           cycle        13.64
+    Avg. Active Threads Per Warp                                13.66
+    Avg. Not Predicated Off Threads Per Warp                    12.82
+    ---------------------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 7.061%                                                                                          
+          Instructions are executed in warps, which are groups of 32 threads. Optimal instruction throughput is         
+          achieved if all 32 threads of a warp execute the same instruction. The chosen launch configuration, early     
+          thread completion, and divergent flow control can significantly lower the number of active threads in a warp  
+          per cycle. This kernel achieves an average of 13.7 threads being active per cycle. This is further reduced    
+          to 12.8 threads per warp due to predication. The compiler may use predication to avoid an actual branch.      
+          Instead, all instructions are scheduled, but a per-thread condition code or predicate controls which threads  
+          execute the instructions. Try to avoid different execution paths within a warp when possible.                 
+
+    Section: Instruction Statistics
+    ---------------------------------------- ----------- ------------
+    Metric Name                              Metric Unit Metric Value
+    ---------------------------------------- ----------- ------------
+    Avg. Executed Instructions Per Scheduler        inst      2255.26
+    Executed Instructions                           inst       360842
+    Avg. Issued Instructions Per Scheduler          inst      2269.41
+    Issued Instructions                             inst       363105
+    ---------------------------------------- ----------- ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                    32
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    293
+    Registers Per Thread             register/thread             108
+    Shared Memory Configuration Size           Kbyte           32.77
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread            9376
+    Waves Per SM                                                0.46
+    -------------------------------- --------------- ---------------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           16
+    Block Limit Registers                 block           16
+    Block Limit Shared Mem                block           16
+    Block Limit Warps                     block           32
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           50
+    Achieved Occupancy                        %        22.02
+    Achieved Active Warps Per SM           warp         7.05
+    ------------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 29.86%                                                                                          
+          The difference between calculated theoretical (50.0%) and measured achieved occupancy (22.0%) can be the      
+          result of warp scheduling overheads or workload imbalances during the kernel execution. Load imbalances can   
+          occur between warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices   
+          Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on     
+          optimizing occupancy.                                                                                         
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 29.86%                                                                                          
+          The 4.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the       
+          hardware maximum of 8. This kernel's theoretical occupancy (50.0%) is limited by the number of blocks that    
+          can fit on the SM. This kernel's theoretical occupancy (50.0%) is limited by the number of required           
+          registers. This kernel's theoretical occupancy (50.0%) is limited by the required amount of shared memory.    
+
+    Section: Source Counters
+    ------------------------- ----------- ------------
+    Metric Name               Metric Unit Metric Value
+    ------------------------- ----------- ------------
+    Branch Instructions Ratio           %         0.08
+    Branch Instructions              inst        30470
+    Branch Efficiency                   %        13.96
+    Avg. Divergent Branches                      56.74
+    ------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 29.55%                                                                                          
+          This kernel has uncoalesced global accesses resulting in a total of 68642 excessive sectors (34% of the total 
+          203290 sectors). Check the L2 Theoretical Sectors Global Excessive table for the primary source locations.    
+          The CUDA Programming Guide                                                                                    
+          (https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#device-memory-accesses) has additional      
+          information on reducing uncoalesced device memory accesses.                                                   
+
+  void build_hashtable_d<(int)32, (int)32>(int *, int *, int, int *, int, int) (3, 1, 1)x(32, 1, 1), Context 1, Stream 7, Device 0, CC 7.5
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/nsecond         4.42
+    SM Frequency            cycle/usecond       518.66
+    Elapsed Cycles                  cycle         9146
+    Memory Throughput                   %         1.42
+    DRAM Throughput                     %         1.42
+    Duration                      usecond        17.63
+    L1/TEX Cache Throughput             %        13.21
+    L2 Cache Throughput                 %         0.74
+    SM Active Cycles                cycle       518.92
+    Compute (SM) Throughput             %         0.22
+    ----------------------- ------------- ------------
+
+    OPT   This kernel grid is too small to fill the available resources on this device, resulting in only 0.0 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: GPU Speed Of Light Roofline Chart
+    INF   The ratio of peak float (fp32) to double (fp64) performance on this device is 32:1. The kernel achieved 0% of 
+          this device's fp32 peak performance and 0% of its fp64 peak performance. See the Kernel Profiling Guide       
+          (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#roofline) for more details on roofline      
+          analysis.                                                                                                     
+
+    Section: Compute Workload Analysis
+    -------------------- ----------- ------------
+    Metric Name          Metric Unit Metric Value
+    -------------------- ----------- ------------
+    Executed Ipc Active   inst/cycle         0.16
+    Executed Ipc Elapsed  inst/cycle         0.01
+    Issue Slots Busy               %         3.93
+    Issued Ipc Active     inst/cycle         0.16
+    SM Busy                        %         3.93
+    -------------------- ----------- ------------
+
+    OPT   Est. Local Speedup: 97.12%                                                                                    
+          All compute pipelines are under-utilized. Either this kernel is very small or it doesn't issue enough warps   
+          per scheduler. Check the Launch Statistics and Scheduler Statistics sections for further details.             
+
+    Section: Memory Workload Analysis
+    ----------------- ------------ ------------
+    Metric Name        Metric Unit Metric Value
+    ----------------- ------------ ------------
+    Memory Throughput Gbyte/second         4.03
+    Mem Busy                     %         0.69
+    Max Bandwidth                %         1.42
+    L1/TEX Hit Rate              %            0
+    L2 Hit Rate                  %        52.25
+    Mem Pipes Busy               %         0.18
+    ----------------- ------------ ------------
+
+    Section: Memory Workload Analysis Chart
+    WRN   The optional metric lts__average_gcomp_input_sector_success_rate.pct could not be found. Collecting it as an  
+          additional metric could enable the rule to provide more guidance.                                             
+
+    Section: Memory Workload Analysis Tables
+    OPT   Est. Speedup: 0.01799%                                                                                        
+          The memory access pattern for global stores in L1TEX might not be optimal. On average, this kernel accesses   
+          4.0 bytes per thread per memory request; but the address pattern, possibly caused by the stride between       
+          threads, results in 9.0 sectors per request, or 9.0*32 = 289.4 bytes of cache data transfers per request.     
+          The optimal thread address pattern for 4.0 byte accesses would result in 4.0*32 = 128.0 bytes of cache data   
+          transfers per request, to maximize L1TEX cache performance. Check the Source Counters section for             
+          uncoalesced global stores.                                                                                    
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 0.06095%                                                                                        
+          The memory access pattern for stores from L1TEX to L2 is not optimal. The granularity of an L1TEX request to  
+          L2 is a 128 byte cache line. That is 4 consecutive 32-byte sectors per L2 request. However, this kernel only  
+          accesses an average of 2.4 sectors out of the possible 4 sectors per cache line. Check the Source Counters    
+          section for uncoalesced stores and try to minimize how many cache lines need to be accessed per memory        
+          request.                                                                                                      
+
+    Section: Scheduler Statistics
+    ---------------------------- ----------- ------------
+    Metric Name                  Metric Unit Metric Value
+    ---------------------------- ----------- ------------
+    One or More Eligible                   %        13.86
+    Issued Warp Per Scheduler                        0.14
+    No Eligible                            %        86.14
+    Active Warps Per Scheduler          warp         0.87
+    Eligible Warps Per Scheduler        warp         0.14
+    ---------------------------- ----------- ------------
+
+    OPT   Est. Local Speedup: 86.14%                                                                                    
+          Every scheduler is capable of issuing one instruction per cycle, but for this kernel each scheduler only      
+          issues an instruction every 7.2 cycles. This might leave hardware resources underutilized and may lead to     
+          less optimal performance. Out of the maximum of 8 warps per scheduler, this kernel allocates an average of    
+          0.87 active warps per scheduler, which already limits the scheduler to less than a warp per instruction.      
+
+    Section: Warp State Statistics
+    ---------------------------------------- ----------- ------------
+    Metric Name                              Metric Unit Metric Value
+    ---------------------------------------- ----------- ------------
+    Warp Cycles Per Issued Instruction             cycle         6.29
+    Warp Cycles Per Executed Instruction           cycle         6.34
+    Avg. Active Threads Per Warp                                31.85
+    Avg. Not Predicated Off Threads Per Warp                    27.96
+    ---------------------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 40.64%                                                                                          
+          On average, each warp of this kernel spends 2.6 cycles being stalled waiting on a fixed latency execution     
+          dependency. Typically, this stall reason should be very low and only shows up as a top contributor in         
+          already highly optimized kernels. Try to hide the corresponding instruction latencies by increasing the       
+          number of active warps, restructuring the code or unrolling loops. Furthermore, consider switching to         
+          lower-latency instructions, e.g. by making use of fast math compiler options. This stall type represents      
+          about 40.6% of the total average of 6.3 cycles between issuing two instructions.                              
+    ----- --------------------------------------------------------------------------------------------------------------
+    INF   Check the Warp Stall Sampling (All Samples) table for the top stall locations in your source based on         
+          sampling data. The Kernel Profiling Guide                                                                     
+          (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-reference) provides more details    
+          on each stall reason.                                                                                         
+
+    Section: Instruction Statistics
+    ---------------------------------------- ----------- ------------
+    Metric Name                              Metric Unit Metric Value
+    ---------------------------------------- ----------- ------------
+    Avg. Executed Instructions Per Scheduler        inst        20.21
+    Executed Instructions                           inst         3234
+    Avg. Issued Instructions Per Scheduler          inst        20.38
+    Issued Instructions                             inst         3260
+    ---------------------------------------- ----------- ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                    32
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                      3
+    Registers Per Thread             register/thread             112
+    Shared Memory Configuration Size           Kbyte           32.77
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread              96
+    Waves Per SM                                                0.00
+    -------------------------------- --------------- ---------------
+
+    OPT   Est. Speedup: 92.5%                                                                                           
+          The grid for this launch is configured to execute only 3 blocks, which is less than the GPU's 40              
+          multiprocessors. This can underutilize some multiprocessors. If you do not intend to execute this kernel      
+          concurrently with other workloads, consider reducing the block size to have at least one block per            
+          multiprocessor or increase the size of the grid to fully utilize the available hardware resources. See the    
+          Hardware Model (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-hw-model)            
+          description for more details on launch configurations.                                                        
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           16
+    Block Limit Registers                 block           16
+    Block Limit Shared Mem                block           16
+    Block Limit Warps                     block           32
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           50
+    Achieved Occupancy                        %         3.12
+    Achieved Active Warps Per SM           warp            1
+    ------------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 86.14%                                                                                          
+          The difference between calculated theoretical (50.0%) and measured achieved occupancy (3.1%) can be the       
+          result of warp scheduling overheads or workload imbalances during the kernel execution. Load imbalances can   
+          occur between warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices   
+          Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on     
+          optimizing occupancy.                                                                                         
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 50%                                                                                             
+          The 4.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the       
+          hardware maximum of 8. This kernel's theoretical occupancy (50.0%) is limited by the number of blocks that    
+          can fit on the SM. This kernel's theoretical occupancy (50.0%) is limited by the number of required           
+          registers. This kernel's theoretical occupancy (50.0%) is limited by the required amount of shared memory.    
+
+    Section: Source Counters
+    ------------------------- ----------- ------------
+    Metric Name               Metric Unit Metric Value
+    ------------------------- ----------- ------------
+    Branch Instructions Ratio           %         0.07
+    Branch Instructions              inst          223
+    Branch Efficiency                   %        99.11
+    Avg. Divergent Branches                       0.01
+    ------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 4.898%                                                                                          
+          This kernel has uncoalesced global accesses resulting in a total of 700 excessive sectors (37% of the total   
+          1888 sectors). Check the L2 Theoretical Sectors Global Excessive table for the primary source locations. The  
+          CUDA Programming Guide                                                                                        
+          (https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#device-memory-accesses) has additional      
+          information on reducing uncoalesced device memory accesses.                                                   
+
+  void probe<(int)32, (int)32>(int *, int *, int *, int *, int, int *, int, int *, int, int *, int, int *) (58581, 1, 1)x(32, 1, 1), Context 1, Stream 7, Device 0, CC 7.5
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/nsecond         4.99
+    SM Frequency            cycle/usecond       584.38
+    Elapsed Cycles                  cycle      6853895
+    Memory Throughput                   %        21.08
+    DRAM Throughput                     %        17.58
+    Duration                      msecond        11.73
+    L1/TEX Cache Throughput             %        42.16
+    L2 Cache Throughput                 %        14.55
+    SM Active Cycles                cycle   6828514.45
+    Compute (SM) Throughput             %        18.87
+    ----------------------- ------------- ------------
+
+    OPT   This kernel exhibits low compute throughput and memory bandwidth utilization relative to the peak performance 
+          of this device. Achieved compute throughput and/or memory bandwidth below 60.0% of peak typically indicate    
+          latency issues. Look at Scheduler Statistics and Warp State Statistics for potential reasons.                 
+
+    Section: GPU Speed Of Light Roofline Chart
+    INF   The ratio of peak float (fp32) to double (fp64) performance on this device is 32:1. The kernel achieved 0% of 
+          this device's fp32 peak performance and 0% of its fp64 peak performance. See the Kernel Profiling Guide       
+          (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#roofline) for more details on roofline      
+          analysis.                                                                                                     
+
+    Section: Compute Workload Analysis
+    -------------------- ----------- ------------
+    Metric Name          Metric Unit Metric Value
+    -------------------- ----------- ------------
+    Executed Ipc Active   inst/cycle         0.76
+    Executed Ipc Elapsed  inst/cycle         0.75
+    Issue Slots Busy               %        18.94
+    Issued Ipc Active     inst/cycle         0.76
+    SM Busy                        %        18.94
+    -------------------- ----------- ------------
+
+    OPT   Est. Local Speedup: 86.06%                                                                                    
+          All compute pipelines are under-utilized. Either this kernel is very small or it doesn't issue enough warps   
+          per scheduler. Check the Launch Statistics and Scheduler Statistics sections for further details.             
+
+    Section: Memory Workload Analysis
+    ----------------- ------------ ------------
+    Metric Name        Metric Unit Metric Value
+    ----------------- ------------ ------------
+    Memory Throughput Gbyte/second        56.15
+    Mem Busy                     %        21.08
+    Max Bandwidth                %        17.58
+    L1/TEX Hit Rate              %        66.47
+    L2 Hit Rate                  %        67.67
+    Mem Pipes Busy               %        15.30
+    ----------------- ------------ ------------
+
+    Section: Memory Workload Analysis Chart
+    WRN   The optional metric lts__average_gcomp_input_sector_success_rate.pct could not be found. Collecting it as an  
+          additional metric could enable the rule to provide more guidance.                                             
+
+    Section: Memory Workload Analysis Tables
+    OPT   Est. Speedup: 0.9745%                                                                                         
+          The memory access pattern for global loads in L1TEX might not be optimal. On average, this kernel accesses    
+          5.2 bytes per thread per memory request; but the address pattern, possibly caused by the stride between       
+          threads, results in 9.5 sectors per request, or 9.5*32 = 305.0 bytes of cache data transfers per request.     
+          The optimal thread address pattern for 5.2 byte accesses would result in 5.2*32 = 165.4 bytes of cache data   
+          transfers per request, to maximize L1TEX cache performance. Check the Source Counters section for             
+          uncoalesced global loads.                                                                                     
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 7.17%                                                                                           
+          The memory access pattern for loads from L1TEX to L2 is not optimal. The granularity of an L1TEX request to   
+          L2 is a 128 byte cache line. That is 4 consecutive 32-byte sectors per L2 request. However, this kernel only  
+          accesses an average of 1.8 sectors out of the possible 4 sectors per cache line. Check the Source Counters    
+          section for uncoalesced loads and try to minimize how many cache lines need to be accessed per memory         
+          request.                                                                                                      
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 0.7099%                                                                                         
+          The memory access pattern for stores from L1TEX to L2 is not optimal. The granularity of an L1TEX request to  
+          L2 is a 128 byte cache line. That is 4 consecutive 32-byte sectors per L2 request. However, this kernel only  
+          accesses an average of 1.2 sectors out of the possible 4 sectors per cache line. Check the Source Counters    
+          section for uncoalesced stores and try to minimize how many cache lines need to be accessed per memory        
+          request.                                                                                                      
+
+    Section: Scheduler Statistics
+    ---------------------------- ----------- ------------
+    Metric Name                  Metric Unit Metric Value
+    ---------------------------- ----------- ------------
+    One or More Eligible                   %        18.90
+    Issued Warp Per Scheduler                        0.19
+    No Eligible                            %        81.10
+    Active Warps Per Scheduler          warp         1.95
+    Eligible Warps Per Scheduler        warp         0.21
+    ---------------------------- ----------- ------------
+
+    OPT   Est. Local Speedup: 78.92%                                                                                    
+          Every scheduler is capable of issuing one instruction per cycle, but for this kernel each scheduler only      
+          issues an instruction every 5.3 cycles. This might leave hardware resources underutilized and may lead to     
+          less optimal performance. Out of the maximum of 8 warps per scheduler, this kernel allocates an average of    
+          1.95 active warps per scheduler, but only an average of 0.21 warps were eligible per cycle. Eligible warps    
+          are the subset of active warps that are ready to issue their next instruction. Every cycle with no eligible   
+          warp results in no instruction being issued and the issue slot remains unused. To increase the number of      
+          eligible warps, avoid possible load imbalances due to highly different execution durations per warp.          
+          Reducing stalls indicated on the Warp State Statistics and Source Counters sections can help, too.            
+
+    Section: Warp State Statistics
+    ---------------------------------------- ----------- ------------
+    Metric Name                              Metric Unit Metric Value
+    ---------------------------------------- ----------- ------------
+    Warp Cycles Per Issued Instruction             cycle        10.34
+    Warp Cycles Per Executed Instruction           cycle        10.34
+    Avg. Active Threads Per Warp                                17.49
+    Avg. Not Predicated Off Threads Per Warp                    16.10
+    ---------------------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 33%                                                                                             
+          On average, each warp of this kernel spends 3.4 cycles being stalled waiting for a scoreboard dependency on a 
+          L1TEX (local, global, surface, texture) operation. Find the instruction producing the data being waited upon  
+          to identify the culprit. To reduce the number of cycles waiting on L1TEX data accesses verify the memory      
+          access patterns are optimal for the target architecture, attempt to increase cache hit rates by increasing    
+          data locality (coalescing), or by changing the cache configuration. Consider moving frequently used data to   
+          shared memory. This stall type represents about 33.0% of the total average of 10.3 cycles between issuing     
+          two instructions.                                                                                             
+    ----- --------------------------------------------------------------------------------------------------------------
+    INF   Check the Warp Stall Sampling (All Samples) table for the top stall locations in your source based on         
+          sampling data. The Kernel Profiling Guide                                                                     
+          (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-reference) provides more details    
+          on each stall reason.                                                                                         
+    ----- --------------------------------------------------------------------------------------------------------------
+    OPT   Est. Speedup: 9.378%                                                                                          
+          Instructions are executed in warps, which are groups of 32 threads. Optimal instruction throughput is         
+          achieved if all 32 threads of a warp execute the same instruction. The chosen launch configuration, early     
+          thread completion, and divergent flow control can significantly lower the number of active threads in a warp  
+          per cycle. This kernel achieves an average of 17.5 threads being active per cycle. This is further reduced    
+          to 16.1 threads per warp due to predication. The compiler may use predication to avoid an actual branch.      
+          Instead, all instructions are scheduled, but a per-thread condition code or predicate controls which threads  
+          execute the instructions. Try to avoid different execution paths within a warp when possible.                 
+
+    Section: Instruction Statistics
+    ---------------------------------------- ----------- ------------
+    Metric Name                              Metric Unit Metric Value
+    ---------------------------------------- ----------- ------------
+    Avg. Executed Instructions Per Scheduler        inst   1293266.36
+    Executed Instructions                           inst    206922618
+    Avg. Issued Instructions Per Scheduler          inst   1293274.32
+    Issued Instructions                             inst    206923891
+    ---------------------------------------- ----------- ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                    32
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                  58581
+    Registers Per Thread             register/thread             205
+    Shared Memory Configuration Size           Kbyte           32.77
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block       Kbyte/block            4.10
+    Threads                                   thread         1874592
+    Waves Per SM                                              183.07
+    -------------------------------- --------------- ---------------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           16
+    Block Limit Registers                 block            8
+    Block Limit Shared Mem                block            8
+    Block Limit Warps                     block           32
+    Theoretical Active Warps per SM        warp            8
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        24.53
+    Achieved Active Warps Per SM           warp         7.85
+    ------------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 75%                                                                                             
+          The 2.00 theoretical warps per scheduler this kernel can issue according to its occupancy are below the       
+          hardware maximum of 8. This kernel's theoretical occupancy (25.0%) is limited by the number of required       
+          registers. This kernel's theoretical occupancy (25.0%) is limited by the required amount of shared memory.    
+
+    Section: Source Counters
+    ------------------------- ----------- ------------
+    Metric Name               Metric Unit Metric Value
+    ------------------------- ----------- ------------
+    Branch Instructions Ratio           %         0.08
+    Branch Instructions              inst     15774779
+    Branch Efficiency                   %        28.33
+    Avg. Divergent Branches                   26239.46
+    ------------------------- ----------- ------------
+
+    OPT   Est. Speedup: 52.44%                                                                                          
+          This kernel has uncoalesced global accesses resulting in a total of 53131796 excessive sectors (57% of the    
+          total 93609280 sectors). Check the L2 Theoretical Sectors Global Excessive table for the primary source       
+          locations. The CUDA Programming Guide                                                                         
+          (https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#device-memory-accesses) has additional      
+          information on reducing uncoalesced device memory accesses.                                                   
+

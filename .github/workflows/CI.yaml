@@ -1,0 +1,165 @@
+name: CI
+run-name: ${{ github.actor }} is building
+
+on: push
+
+jobs:
+  # https://developer.nvidia.com/nvidia-development-tools-solutions-err_nvgpuctrperm-permission-issue-performance-counters
+  GPU:
+    if: github.actor == 'azimafroozeh'
+    strategy:
+      fail-fast: true
+      matrix:
+        platform: [ T4, V100 ]
+        BUILD_TYPE: [ Release ]
+        cxx: [ clang++ ]
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+
+      - name: Make directory build
+        run: mkdir ${{github.workspace}}/build
+
+      - name: Configure CMake
+        run: cmake -DFLS_BUILD_GPU=ON -DCMAKE_TOOLCHAIN_FILE=${{github.workspace}}/toolchains/T4.cmake -S ${{github.workspace}} -B ${{github.workspace}}/build
+        env:
+          CXX: ${{ matrix.cxx }}
+
+      - name: Build
+        run: cmake --build ${{github.workspace}}/build -j 8
+
+      - name: Report compression average bit width
+        run: |
+          echo "NOT Sorted"          
+          ${{github.workspace}}/build/fastlanes/src/compress_ssb
+          echo "Sorted"                    
+          ${{github.workspace}}/build/fastlanes/src/compress_ssb_sorted
+
+      - name: FLS-GPU-opt q21 V3
+        run: |
+          ${{github.workspace}}/build/fastlanes/src/fls_q21_bitpacked_opt_v4
+          echo "SORTED + FOR ON ORDERDATE"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q21_bitpacked_opt_v4 | grep Duration
+
+      - name: FLS-GPU-opt q31 V5
+        run: |
+          ${{github.workspace}}/build/fastlanes/src/fls_q31_bitpacked_opt_v5
+          echo "SORTED + FOR ON ORDERDATE"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q31_bitpacked_opt_v5 | grep Duration
+
+      - name: FLS-GPU-opt q41 V3 V4
+        run: |
+          ${{github.workspace}}/build/fastlanes/src/fls_q41_bitpacked_opt_v3
+          echo "SORTED + FOR ON ORDERDATE"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q41_bitpacked_opt_v3 | grep Duration
+          
+          ${{github.workspace}}/build/fastlanes/src/fls_q41_bitpacked_opt_v4
+          echo "SORTED + FOR ON ORDERDATE and CUSTKEY"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q41_bitpacked_opt_v4 | grep Duration
+
+      - name: Test FLS + Crystal
+        run: |
+          ${{github.workspace}}/build/fastlanes/src/fls_q11 1
+          echo "-- fls_q11 version 1 Passed!"
+          ${{github.workspace}}/build/fastlanes/src/fls_q11 2
+          echo "-- fls_q11 version 2 Passed!"
+          
+          ${{github.workspace}}/build/fastlanes/src/fls_q21 1
+          echo "-- fls_q21 version 1 Passed!"
+          ${{github.workspace}}/build/fastlanes/src/fls_q21 2
+          echo "-- fls_q21 version 2 Passed!"
+          ${{github.workspace}}/build/fastlanes/src/fls_q21 3
+          echo "-- fls_q21 version 3 Passed!"
+          
+          ${{github.workspace}}/build/fastlanes/src/fls_q31 1
+          echo "-- fls_q31 version 1 Passed!"
+          ${{github.workspace}}/build/fastlanes/src/fls_q31 2
+          echo "-- fls_q31 version 2 Passed!"
+          ${{github.workspace}}/build/fastlanes/src/fls_q31 3
+          echo "-- fls_q31 version 3 Passed!"
+          ${{github.workspace}}/build/fastlanes/src/fls_q31 4
+          echo "-- fls_q31 version 4 Passed!"
+          
+          ${{github.workspace}}/build/fastlanes/src/fls_q41 1
+          echo "-- fls_q41 version 1 Passed!"
+          ${{github.workspace}}/build/fastlanes/src/fls_q41 2
+          echo "-- fls_q41 version 2 Passed!"
+      #          ${{github.workspace}}/build/fastlanes/src/fls_q31 3
+      #          echo "-- fls_q31 version 3 Passed!"
+      #          ${{github.workspace}}/build/fastlanes/src/fls_q31 4
+      #          echo "-- fls_q31 version 4 Passed!"
+      #          ${{github.workspace}}/build/fastlanes/src/fls_q31 4
+      #          echo "-- fls_q31 version 4 Passed!"
+
+      - name: NCU FLS + Crystal
+        run: |
+          echo "FLS Q11 version 1 : FastLanes-GPU"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q11 1 | grep Duration
+          echo "FLS Q11 version 2 : FLS-GPU-opt"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q11 2 | grep Duration
+          
+          echo "FLS Q21 version 1 : FastLanes-GPU"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q21 1 | grep Duration
+          echo "FLS Q21 version 2 : FLS-GPU-opt"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q21 2 | grep Duration
+          echo "FLS Q21 version 3 : FLS-GPU-opt + predicate load on uncompressed data"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q21 3 | grep Duration
+          
+          echo "FLS Q31 version 1 : FastLanes-GPU"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q31 1 | grep Duration
+          echo "FLS Q31 version 2 : Version 1 >> combination of shared + register"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q31 2 | grep Duration
+          echo "FLS Q31 version 3 : 8 value at a time"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q31 3 | grep Duration
+          echo "FLS Q31 version 4 : v3 + predicate load on uncompressed data"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q31 4 | grep Duration
+          
+          echo "FLS Q41 version 1 : FastLanes-GPU"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q41 1 | grep Duration
+          echo "FLS Q41 version 2 : 8 value at a time + predicate load on uncompressed data"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q41 2 | grep Duration
+      #          echo "FLS Q31 version 3 : 8 value at a time"
+      #          ncu ${{github.workspace}}/build/fastlanes/src/fls_q31 3 | grep Duration
+      #          echo "FLS Q31 version 4 : v3 + predicate load on uncompressed data"
+      #          ncu ${{github.workspace}}/build/fastlanes/src/fls_q31 4 | grep Duration
+
+      - name: NCU crystal
+        run: |
+          echo "-- crystal q11"
+          ncu ${{github.workspace}}/build/crystal/src/crystal_q11 | grep Duration
+          echo "-- crystal q21"
+          ncu ${{github.workspace}}/build/crystal/src/crystal_q21 | grep Duration
+          echo "-- crystal q31"
+          ncu ${{github.workspace}}/build/crystal/src/crystal_q31 | grep Duration
+          echo "-- crystal q41"
+          ncu ${{github.workspace}}/build/crystal/src/crystal_q41 | grep Duration
+
+      - name: NCU crystal OPT
+        run: |
+          echo "-- crystal-opt q11"
+          ncu ${{github.workspace}}/build/crystal-opt/src/crystal_opt_q11 | grep Duration
+          echo "-- crystal-opt q21"
+          ncu ${{github.workspace}}/build/crystal-opt/src/crystal_opt_q21 | grep Duration
+          echo "-- crystal-opt q31"
+          ncu ${{github.workspace}}/build/crystal-opt/src/crystal_opt_q31 | grep Duration
+          echo "-- crystal-opt q41"
+          ncu ${{github.workspace}}/build/crystal-opt/src/crystal_opt_q41 | grep Duration
+
+      - name: FLS-GPU-opt q11 v2
+        run: echo "Simdized TODO"
+        #          ${{github.workspace}}/build/fastlanes/src/fls_q11_bitpacked_opt_v2
+        #          ncu ${{github.workspace}}/build/fastlanes/src/fls_q11_bitpacked_opt_v2 | grep Duration
+
+      - name: FLS-GPU-opt q11 v3
+        run: |
+          ${{github.workspace}}/build/fastlanes/src/fls_q11_bitpacked_opt_v3
+          echo "v3 : Multiple check"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q11_bitpacked_opt_v3 | grep Duration
+
+      - name: FLS-GPU-opt q11 v4
+        run: |
+          ${{github.workspace}}/build/fastlanes/src/fls_q11_bitpacked_opt_v4
+          echo "v1 with 8 value at a time **not complete yet**"
+          ncu ${{github.workspace}}/build/fastlanes/src/fls_q11_bitpacked_opt_v4 | grep Duration

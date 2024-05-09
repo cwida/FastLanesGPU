@@ -1,0 +1,6 @@
+add_executable(fastlanes_bench_bitpack fastlanes_bench_bitpack.cu)
+target_link_libraries(fastlanes_bench_bitpack PUBLIC fastlanes_gpu)
+
+
+add_executable(fastlanes_bench_delta fastlanes_bench_delta.cu)
+target_link_libraries(fastlanes_bench_delta PUBLIC fastlanes_gpu)
